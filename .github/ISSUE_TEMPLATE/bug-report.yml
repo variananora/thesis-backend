@@ -1,0 +1,74 @@
+name: Bug Report
+description: Report a Bug or an Issue
+labels: ['bug']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome to the bug tracker
+
+  - id: description
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Description'
+      description: |
+        A clear and detailed description of what went wrong.
+        The more information you can provide, the easier we can handle this problem.
+      placeholder: |
+        When doing [...] I experienced [...], I am pretty sure this is not intended and should be fixed.
+
+  - id: reproduction-steps
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Reproduction Steps'
+      description: |
+        Tell us the exact steps to reproduce this issue, the more detailed the easier we can reproduce it.
+      placeholder: |
+        1. Do [...]
+        2. Then do [...]
+        3. Now [...] happens
+
+  - id: expected-behaviour
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Expected Behavior'
+      description: |
+        What were you expecting to happen?
+        What do you think would have been the correct behaviour?
+      placeholder: |
+        I expected [...] to happen.
+
+  - id: media
+    type: textarea
+    attributes:
+      label: 'Screenshots / Videos'
+      description: |
+        The best way to illustrate in an issue is by recording a Video or taking a Screenshot.
+        If you can capture any footage of the bug happening, it would help us out a lot!
+      placeholder: |
+        Drag and drop an image or video onto this field to upload it.
+
+  - id: error-logs
+    type: input
+    attributes:
+      label: 'Error Logs'
+      description: |
+        Take a look at your console to see if there any error logs
+        If you are unsure about it, post your full log, you can find it under /logs/latest.log
+      placeholder: https://haste.zneix.eu/...
+
+  - id: notes
+    type: textarea
+    attributes:
+      label: 'Notes'
+      description: |
+        Any additional notes or comments you want to add.
+      placeholder: |
+        Add any other context about the problem here.

@@ -1,0 +1,7 @@
+feature: [ 'feature/*', 'feat/*' ]
+fix: [ 'fix/*', 'bugfix/*', 'bug-fix/*' , 'bug/*', 'hotfix/*' ]
+chores: chores/*
+tech: [ 'tech/*', 'techdebt/*', 'tech-debt/*' ]
+enhancement: [ 'enhancement/*', 'enhance/*' ]
+documentation: [ 'docs/*', 'doc/*', 'documentation/*' ]
+tests: [ 'tests/*', 'test/*' ]

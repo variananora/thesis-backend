@@ -1,0 +1,40 @@
+name: Feature Request
+description: Request a new feature
+labels: ['feature']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome to the feature request tracker
+
+  - id: description
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Description'
+      description: |
+        A clear and detailed description of what to have.
+        The more information you can provide, the easier we can implement this feature.
+      placeholder: |
+        I want [...] with [...].
+
+  - id: media
+    type: textarea
+    attributes:
+      label: 'Screenshots / Videos'
+      description: |
+        The best way to illustrate a feature request is by recording a Video or taking a Screenshot.
+        If you can give a proof-of-concept or illustration, it would help us out a lot!
+      placeholder: |
+        Drag and drop an image or video onto this field to upload it.
+
+  - id: notes
+    type: textarea
+    attributes:
+      label: 'Notes'
+      description: |
+        Any additional notes or comments you want to add.
+      placeholder: |
+        Add any other context about the feature here.
